@@ -1,0 +1,16 @@
+[
+  {
+    "nombre": "Prueba",
+    "cel": "123456789",
+    "email": "prueba@prueba.com",
+    "mensaje": "Mensaje de Prueba",
+    "id": 1
+  },
+  {
+    "nombre": "Prueba 2",
+    "cel": "987654321",
+    "email": "prueba@prueba.com",
+    "mensaje": "Otro mensaje de prueba",
+    "id": 2
+  }
+]

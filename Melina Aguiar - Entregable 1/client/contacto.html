@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FullStack Design</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+</head>
+<body>
+    <div class="menu">
+        <header>
+            <section class="logo">
+                <a href="http://127.0.0.1:5501/client/index.html"> <img src="./images/logo.png"
+                        alt="Logo"></a>
+            </section>
+            <nav>
+                <ul>
+                    <li><a href="http://127.0.0.1:5500/client/index.html">INICIO</a></li>
+                    <li><a href="http://127.0.0.1:5500/client/contacto.html">CONTACTO</a></li>
+                    <li><a href="http://127.0.0.1:5500/client/listadoContactos.html">LISTADO</a></li>
+                </ul>
+            </nav>
+            <div onclick="toggleMenu()" class="nav-icon">&#9776;</div>
+            
+        </header>
+    </div>
+    <main class="mainContacto">
+
+        <section class="sectionContacto" > 
+            <form id="formContacto" >
+                <h2>CONTACTANOS</h2>
+                    <input type="text" id="nombre" placeholder="Nombre" >
+                    <input type="tel" id="cel" placeholder="Celular" pattern="^[0-9]+" maxlength="9">
+                    <input type="email" id="email" placeholder="Email" >
+                    <textarea rows="3" id="mensaje" placeholder="Mensaje" ></textarea>
+                <button type="submit" class="btnContacto">ENVIAR</button>   
+            </form>
+            <article class="articleNosotros">
+                <h3>UNETE A NOSOTROS</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non, magnam ratione odio, placeat quasi
+                    et
+                    error ipsa odit fugit, dolor voluptas dolores ipsum esse. Cupiditate modi quibusdam cum sint
+                    dolorum.</p>
+                    <input type="email" id="email" placeholder="Ingresa tu email" required>
+                    <button id="btnSuscribirse" class="btnSuscribirse" >SUSCRIBIRSE</button>
+            </article>
+ 
+        </section>
+    </main>
+    <footer>
+        <section class="footer1">
+            <h3>FULLSTACK DESIGN</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis laboriosam culpa illum, commodi
+                cupiditate
+                in? Quis aliquam iusto dolore, illo omnis consectetur quibusdam repellat! Voluptatem numquam
+                delectus
+                laboriosam vitae quo!</p>
+        </section>
+        <section class="footer2">
+                <h3>Empresa</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non, magnam ratione odio, placeat quasi et error ipsa odit fugit, dolor voluptas dolores ipsum esse. Cupiditate modi quibusdam cum sint dolorum.</p>
+        </section>
+        <section class="footer3">
+            <h3>Contáctanos</h3>
+            <div class="contactos">
+                
+                <label class="dato">
+                    <img src="./images/gps.png" alt="">
+                    <p>Ubicación</p>
+                </label>
+                <label class="dato">
+                    <img src="./images/fono.png" alt="">
+                    <p>Call +01 1234567890</p>
+                </label>
+                <label class="dato">
+                    <img src="./images/direccion.png" alt="">
+                    <p>demo@gmail.com</p>
+                </label>
+                
+            </div>
+        </section>
+         <section class="footer4">
+            <h3>Siguenos por</h3>
+            <div class="redes">
+                <label class="red">
+                    <img src="./images/facebook.png" alt="">
+                </label>
+                    <label class="red">
+                    <img src="./images/twitter.png" alt="">
+                </label>
+                    <label class="red">
+                    <img src="./images/linkedin-in.png" alt="">
+                </label>
+                    <label class="red">
+                    <img src="./images/instagram.png" alt="">    
+                </label>
+            </div> 
+         </section>
+    </footer>
+        <p class="derechos">	&copy; 2023 Todos los Derechos Reservados </p>
+        <p id="pMensaje"></p>
+        <script src="./js/contactos.js"></script>
+     <script>
+        document.getElementById("formContacto").addEventListener("submit", (e) => {
+        e.preventDefault(); // Evitar que se envíe el formulario
+        guardarMensaje();
+      });
+      </script>
+</body>
+</html>
